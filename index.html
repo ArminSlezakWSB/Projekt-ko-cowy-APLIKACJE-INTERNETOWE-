@@ -1,0 +1,458 @@
+<!--TODO
+Dodanie 4. postera z recenzentami
+
+slider zdjec rowerow
+
+strony dla rowerow
+
+-->
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Bikeland Wypożyczalnia Rowerów</title>
+    
+    <meta name="author" content="Armin Ślęzak">
+    <meta name="description" content="Wypożyczalnia rowerów używanych we Wrocławiu">
+    <meta name="keywords" content="rowery, wypożyczalnia, transport, kurier, koła">
+    
+    <link rel="stylesheet" href="mian.css">
+    <link rel="stylesheet" href="fontello-ab57794d/css/fontello.css">
+    <script src="jquery-3.3.1.js"></script>
+    <script src="preloader.js"></script>
+    <!--ZAKRESY DLA MEDIA QUERIES
+    https://devfacts.com/media-queries-breakpoints-2021/
+    -->
+</head>
+<body id="body">
+<!--
+//   
+// ========================================
+//    ||     ||||   \     / ||||  |||||   {}
+//  ||  ||  ||  ||    \/\/  ||    ||  ||  {}
+//  ||--||  ||---           ||||  |||||   {}
+//  ||  ||  ||                ||  ||  ||  {}
+//  ||  ||  ||             |||||  |||||   {}
+// ======================================={}
+//                                        \\
+*/
+   -->
+    
+    <!--PRELOADER -->
+     <div id="preloader" class="preloader_container unvisible">
+         <div class="preload_1">
+             <i class="icon-bicycle"></i>
+         </div>
+         <div class="preload_2"></div>
+     </div>
+     <!--HEADER -->
+    <header class="main_header">
+      <section class="header-section">
+          <a href="index.html">
+              <img src="img/logo.png" alt="logo">
+          </a>
+          <div class="hamburger"></div>
+      </section>
+      <section class="header-section">
+          <nav>
+            <ul>
+                <li><a class="navItem" href="#oferta">Oferta</a></li>
+                <li><a class="navItem" href="#o_nas">O Nas</a></li>
+                <li><a class="navItem" href="#cennik">Cennik</a></li>
+                <li><a class="navItem" href="#stopka">Kontakt</a></li>
+            </ul>
+        </nav>
+      </section>       
+    </header>
+    <!-- ARTICLE ZACHĘTA -->
+    
+    <article id="header_article">
+        <section>
+          <div id="figure_recension_container">
+           
+             <!--
+              <figure id="previous_figure">
+               <img src="img/recenzenci/kubica.jpg" alt="robert_kubica_recenzja">
+                <figcaption>
+                    Lubię się casem odstresować na rowerku
+                </figcaption>
+                <strong>Robert Kubica</strong>
+                <div class="ocena">
+                    <span>
+                    <i class=" icon-star-1"></i></span>
+                    <span>
+                        <i class=" icon-star-1"></i>
+                    </span>
+                    <span>
+                        <i class=" icon-star-1"></i>
+                    </span>
+                    <span>
+                        <i class=" icon-star-1"></i>
+                    </span>
+                    <span><i class=" icon-star"></i></span>
+                </div>
+            </figure>
+            -->
+            
+            <figure>
+               <img src="img/recenzenci/pawel.png" alt="pan_pawel_recenzja">
+                <figcaption>
+                    Najlepsze rowery wyczynowe. Stan idealny, lakierek nowy. <a href="https://www.youtube.com/watch?v=9cX17CeYKt0" target="_blank">Może z bliska zobaczycie jego stan techniczny</a>
+                </figcaption>
+                <strong>Pan Paweł</strong>
+                <div class="ocena">
+                    <span>
+                    <i class=" icon-star-1"></i></span>
+                    <span>
+                        <i class=" icon-star-1"></i>
+                    </span>
+                    <span>
+                        <i class="icon-star"></i>
+                    </span>
+                    <span>
+                        <i class=" icon-star"></i>
+                    </span>
+                    <span><i class=" icon-star"></i></span>
+                </div>
+            </figure>
+            <figure id="actually_figure">
+               <img src="img/recenzenci/ojciecM.jpg" alt="ojciec_mateusz_recenzja">
+                <figcaption>
+                    Od lat wypożyczam rowery od bikeland. Zawwsze zdążę na mszę Świętą, do chorych i również na cmentarz poświęcić groby.
+                </figcaption>
+                <strong>Ojciec Mateusz</strong>
+                <div class="ocena">
+                    <span>
+                    <i class=" icon-star-1"></i></span>
+                    <span>
+                        <i class=" icon-star-1"></i>
+                    </span>
+                    <span>
+                        <i class=" icon-star-1"></i>
+                    </span>
+                    <span>
+                        <i class=" icon-star-1"></i>
+                    </span>
+                    <span><i class=" icon-star-1"></i></span>
+                </div>
+            </figure >
+            <!--
+//   
+// ========================================
+//    ||     ||||   \     / ||||  |||||   {}
+//  ||  ||  ||  ||    \/\/  ||    ||  ||  {}
+//  ||--||  ||---           ||||  |||||   {}
+//  ||  ||  ||                ||  ||  ||  {}
+//  ||  ||  ||             |||||  |||||   {}
+// ======================================={}
+//                                        \\
+*/
+   -->
+            <figure id="next_figure">
+               <img src="img/recenzenci/pudziano.jpeg" alt="mariusz_pudzian_recenzja">
+                <figcaption>
+                    Lubię jeżdzić rowerem w góry. Rowery górskie od bikeland sprawdzają się w każdych warunkach. Mógłbym chodzić po górach pieszo, ale to by nic nie dało
+                </figcaption>
+                <strong>Mariusz Pudzian</strong>
+                <div class="ocena">
+                    <span>
+                    <i class=" icon-star-1"></i></span>
+                    <span>
+                        <i class=" icon-star-1"></i>
+                    </span>
+                    <span>
+                        <i class=" icon-star-1"></i>
+                    </span>
+                    <span>
+                        <i class=" icon-star-half-alt"></i>
+                    </span>
+                    <span><i class=" icon-star"></i></span>
+                </div>
+            </figure>
+            </div>
+        </section>
+        <section>
+            <h2>Dlaczego warto wybrać naszą <br>wypożyczalnię?</h2>
+            <ul>
+                <li>Zniżki za polecanie znajomym</li>
+                <li>kody promocyjne</li>
+                <li>darmowe przejazdy</li>
+            </ul>
+        </section>
+    </article>
+    <!-- MAIN -->
+    <main id="oferta">
+        <header class="headers">
+            <h1>
+                Oferta
+            </h1>
+            <hr class="after_header">
+        </header>
+        <article class="rowery">
+            <!--div.box.bicycle_box$>*16-->
+            <div class="box">
+                <figure class="bicycle_box1" id="bicycle_box1">
+                    <img src="img/rowery/rower1/zdj1.jpg" alt="rower1" id="rower1">
+                    <h3>Rower Maxycycles</h3>
+                    <button class="wypozycz_rower" id="wypozycz1">Wypożycz</button>
+                    <!--https://www.olx.pl/d/oferta/sprzedam-rower-meski-CID767-IDHRp0r.html#574ec7512f;promoted-->
+                </figure>
+            </div>
+            <div class="box">
+                <figure class="bicycle_box2" id="bicycle_box2">
+                    <img src="img/rowery/rower2/zdj1.jpg" alt="rower2" id="rower2">
+                    <h3>Rower wyczynowy BMX Academy</h3>
+                    <button class="wypozycz_rower" id="wypozycz2">Wypożycz</button>
+                    <!--
+                    https://www.olx.pl/d/oferta/rower-wyczynowy-bmx-academy-CID767-IDKMdVq.html#574ec7512f
+                    -->
+                </figure>
+            </div>
+            <div class="box">
+                <figure class="bicycle_box3" id="bicycle_box3">
+                    <img src="img/rowery/rower3/zdj1.jpg" alt="rower3" id="rower3">
+                    <h3>Rower Colorado Trekking</h3>
+                    <button class="wypozycz_rower" id="wypozycz3">Wypożycz</button>
+                    <!-- 
+                    https://www.olx.pl/d/oferta/rower-colorado-trekking-CID767-IDJTZnS.html#574ec7512f
+                    -->
+                </figure>
+            </div>
+            <div class="box">
+                <figure class="bicycle_box4" id="bicycle_box4">
+                    <img src="img/rowery/rower4/zdj1.jpg" alt="rower4" id="rower4">
+                    <h3>Rower Holenderski</h3>
+                    <button class="wypozycz_rower" id="wypozycz4">Wypożycz</button>
+                    <!--
+                    https://www.olx.pl/d/oferta/rower-holenderski-CID767-IDJSTfd.html#574ec7512f
+                    -->
+                </figure>
+            </div>
+            <div class="box">
+                <figure class="bicycle_box5" id="bicycle_box5">
+                    <img src="img/rowery/rower5/zdj1.jpg" alt="rower5" id="rower5">
+                    <h3>Rower Gravel Marin Four Corners rama XL</h3>
+                    <button class="wypozycz_rower" id="wypozycz5">Wypożycz</button>
+                    <!--
+                    https://www.olx.pl/d/oferta/rower-gravel-marin-four-corners-rama-xl-malo-uzywany-CID767-IDM0kmW.html#574ec7512f
+                    -->
+                </figure>
+            </div>
+            <div class="box">
+                <figure class="bicycle_box6" id="bicycle_box6">
+                    <img src="img/rowery/rower6/zdj1.jpg" alt="rower6" id="rower6">
+                    <h3>Rower Damski miejski 26'</h3>
+                    <button class="wypozycz_rower" id="wypozycz6">Wypożycz</button>
+                    <!--
+                    https://www.olx.pl/d/oferta/rower-damski-miejski-kola-26-CID767-IDM0kAW.html#574ec7512f
+                    -->
+                </figure>
+                <!--
+//   
+// ========================================
+//    ||     ||||   \     / ||||  |||||   {}
+//  ||  ||  ||  ||    \/\/  ||    ||  ||  {}
+//  ||--||  ||---           ||||  |||||   {}
+//  ||  ||  ||                ||  ||  ||  {}
+//  ||  ||  ||             |||||  |||||   {}
+// ======================================={}
+//                                        \\
+*/
+   -->
+            </div>
+            <div class="box">
+                <figure class="bicycle_box7" id="bicycle_box7">
+                    <img src="img/rowery/rower7/zdj1.jpg" alt="rower7" id="rower7">
+                    <h3>Rower Wheeler 600 PRO</h3>
+                    <button class="wypozycz_rower" id="wypozycz7">Wypożycz</button>
+                    <!--
+                    https://www.olx.pl/d/oferta/rower-wheeler-600-pro-CID767-IDLtrmU.html#574ec7512f
+                    -->
+                </figure>
+            </div>
+            <div class="box">
+                <figure class="bicycle_box8" id="bicycle_box8">
+                    <img src="img/rowery/rower8/zdj1.jpg" alt="rower8" id="rower8">
+                    <h3>Rower Gazela 28'</h3>
+                    <button class="wypozycz_rower" id="wypozycz8">Wypożycz</button>
+                    <!--
+                    https://www.olx.pl/d/oferta/rower-gazela-rozmiar-kol-28-CID767-IDJLQiD.html#574ec7512f
+                    
+                    -->
+                </figure>
+            </div>
+            <div class="box">
+                <figure class="bicycle_box9" id="bicycle_box9" >
+                    <img src="img/rowery/rower9/zdj1.jpg" alt="rower9" id="rower9">
+                    <h3>Rower Romet Universal La Riviera</h3>
+                    <button class="wypozycz_rower" id="wypozycz9">Wypożycz</button>
+                    <!--
+                    https://www.olx.pl/d/oferta/rower-romet-universal-la-riviera-exportowy-prl-CID767-IDKJG6L.html#574ec7512f
+                    -->
+                </figure>
+            </div>                          
+        </article>
+    </main>
+    <!-- O_NAS -->
+    <section id="o_nas">
+       <aside class="pre_o_nas">
+           <i class="icon-bicycle"></i>
+           <div></div>
+       </aside>
+        <header class="headers_reverse">
+        <h1>
+                O nas
+        </h1>
+        </header>
+        <div class="opis">
+            <p>
+            Jesteśmy prężnie rozwijającą się firmą działającą na rynku już 10 lat. Zaczynaliśmy od wypożyczania rowerów użyanych, a teraz mamy w swojej ofercie nawet rowery elektryczen. Dbamy o to, aby wszystko było dopięte na ostatni guzik
+        </p>
+        <img src="img/laury.png" alt="laury">
+        <img src="img/miasto.png" alt="miasto">
+        <p>
+            Działamy w 5 największych miastach w Polsce: Warszawie, Gdańsku, Krakowie, Poznaniu i od niedawna również we Wrocławiu.
+        </p>
+        <p>Wczesne sukcesy pozwoliły nam jednak rozwinąć model biznesowy i w krótkim czasie rozszerzyć go również na inne sektory. Dziesięć lat później rozwinęliśmy się dalece poza wąskie ramy narzucone przez nazwę naszej firmy. Dzisiaj współpracujemy z firmami kurierskimi tj. Wolt, Glovo, Pyszne.pl, czy Uber Eats.</p>
+        <img src="img/wykres.png" alt="wykres">
+        </div>
+        <aside class="rev_pre_o_nas">
+            <i class="icon-bicycle"></i>
+        </aside>
+    </section>
+    <section id="cennik">
+        <header class="headers">
+        <h1>Cennik</h1>
+        <hr class="after_header">
+        </header>
+        <!--
+//   
+// ========================================
+//    ||     ||||   \     / ||||  |||||   {}
+//  ||  ||  ||  ||    \/\/  ||    ||  ||  {}
+//  ||--||  ||---           ||||  |||||   {}
+//  ||  ||  ||                ||  ||  ||  {}
+//  ||  ||  ||             |||||  |||||   {}
+// ======================================={}
+//                                        \\
+*/
+   -->
+        <section class="cennik">
+            <table>
+               <tr>
+                   <th>Rower</th>
+                   <th>Cena/1 <br>dzień (PLN)</th>
+                   <th>Cena/7 <br>dni (PLN)</th>
+                   <th>Cena/30 <br>dni (PLN)</th>
+               </tr>
+               <tr>
+                   <td>Rower Maxycycles</td>
+                   <td>18</td>
+                   <td>108</td>
+                   <td>360</td>
+               </tr>
+               <tr>
+                   <td>Rower wyczynowy BMX Academ</td>
+                   <td>10</td>
+                   <td>55</td>
+                   <td>180</td>
+               </tr>
+               <tr>
+                   <td>Rower Colorado Trekking
+</td>
+                   <td>18</td>
+                   <td>108</td>
+                   <td>360</td>
+               </tr>
+               <tr>
+                   <td>Rower Holenderski</td>
+                   <td>21</td>
+                   <td>126</td>
+                   <td>420</td>
+               </tr>
+               <tr>
+                   <td>Rower Gravel Marin Four Corners rama XL</td>
+                   <td>18</td>
+                   <td>108</td>
+                   <td>360</td>
+               </tr>
+               <tr>
+                   <td>Rower Damski miejski 26'</td>
+                   <td>18</td>
+                   <td>108</td>
+                   <td>360</td>
+               </tr>
+               <tr>
+                   <td>Rower Wheeler 600 PRO</td>
+                   <td>15</td>
+                   <td>90</td>
+                   <td>300</td>
+               </tr>
+               <tr>
+                   <td>Rower Gazela 28'</td>
+                   <td>18</td>
+                   <td>108</td>
+                   <td>360</td>
+               </tr>
+               <tr>
+                   <td>Rower Romet Universal La Riviera</td>
+                   <td>18</td>
+                   <td>108</td>
+                   <td>360</td>
+               </tr>
+                <caption>
+                    Cennik Usług Wypożyczalni Bikeland
+                </caption>
+            </table>
+            
+        </section>
+    </section>
+    <section></section>
+    <footer id="stopka">
+       <table>
+           <tr>
+               <th>Źródła</th>
+               <th></th>
+               <th>Pozostałe projekty</th>
+                <th></th>
+               <th>Kontakt</th>
+           </tr>
+           <tr>
+               <td>
+                   Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                   </td>
+               <td>
+
+               </td>
+               <td></td>
+               <td></td>
+               <td>bikeland.kontakt@gmail.com</td>
+           </tr>
+           <tr>
+               <td>
+                   <a href="https://fontello.com/">fontello</a>
+               </td>
+               <td>                   
+                   
+                </td>
+                <td></td>
+               <td></td>
+               <td>bikeland.reklamacje@gamil.com</td>
+           </tr>
+           <tr>
+               <td><a href="https://devfacts.com/media-queries-breakpoints-2021">Zakresy dla media queries</a>
+               </td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td>786 666 999</td>
+           </tr>
+       </table>
+        
+    </footer>
+
+    <!--<script src="script.js"></script>-->
+    <script src="ui.js"></script>
+</body>
+</html>
